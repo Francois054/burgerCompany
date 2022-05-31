@@ -68,11 +68,11 @@ if(isset($_POST['menu'])){
     <main></main>
     <aside>
         <div class="icones">
-            <i class="fa-solid fa-burger-fries"></i>
-            <i class="fa-solid fa-burger"></i>
-            <i class="fa-solid fa-cup-straw"></i>
-            <i class="fa-solid fa-salad"></i>
-            <i class="fa-solid fa-cupcake"></i>
+            <img src="./Images/menu_burger.png" alt="">
+            <img src="./Images/burger.png" alt="">
+            <img src="./Images/soda.png" alt="">
+            <img src="./Images/salad.png" alt="">
+            <img src="./Images/cupcake.png" alt="">
         </div>
         <nav class="nav">
             <a href="#">MENUS</a> <br>
