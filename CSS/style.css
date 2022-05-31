@@ -46,8 +46,6 @@ img{
     width: 200px;
     height: 100px;
     border-radius: 50%;
-    border-style: solid;
-    border-color: aqua;
     margin-left: 5%;
     margin: 2%;
 }
@@ -57,7 +55,6 @@ main{
 }
 aside{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
     grid-area: aside;
@@ -68,10 +65,20 @@ aside a{
     font-size: 2.5rem;
     padding:2%;
 }
-aside i{
-    width:50px;
-    height:50px;
+.icones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+i{
+    width: 50px;
+    height: 50px;
     opacity: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 footer{
     display: flex;
