@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.container{
+display: grid ;
+grid-template-columns: 1fr 3fr;
+grid-template-rows: 120px 250px 250px 80px;
+gap: 5px;
+margin: 10px;
+grid-template-areas: "head head head head"
+ "aside main main main"
+ "aside main main main"
+"foot foot foot foot";
+}
+
+header{
+    display: flex;
+    grid-area: head;
+    background-color: aqua;
+    justify-content: space-between;
+}
+nav{
+    align-self: center;
+    justify-content:right;
+}
+a{
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0 10px;
+}
+.titre{
+    color:black;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+span{
+    text-decoration: underline;
+}
+img{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: aqua;
+    margin-left: 5%;
+    margin: 2%;
+}
+main{
+    grid-area: main;
+    background-color: bisque;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    grid-area: aside;
+    background-color: chartreuse;    
+}
+
+aside a{
+    font-size: 2.5rem;
+    padding:2%;
+}
+aside i{
+    width:50px;
+    height:50px;
+    opacity: 0;
+}
+footer{
+    display: flex;
+    grid-area: foot;
+    background-color: blueviolet;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
