@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <a href="./Index.html"> RETOUR A L'ACCUEIL </a>
-        <a href="./contact.html"> Contact </a>
+        <a href="./index.php"> RETOUR A L'ACCUEIL </a>
+        <a href="./contact.php"> Contact </a>
     </header>
     <section class="faq-section">
         <input type="checkbox" id="q1">

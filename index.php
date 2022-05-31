@@ -29,30 +29,65 @@ if(isset($_POST['menu'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style_contact.css">
+    <script src="https://kit.fontawesome.com/84861a5cc6.js" crossorigin="anonymous"></script>
     <title>Accueil Burger Company</title>
 </head>
 
-<body>
-    <?php
-    if(isset($_GET['page'])){
-        $page = $_GET['page'];
+<?php
+    // if(isset($_GET['page'])){
+    //     $page = $_GET['page'];
 
-        switch($page) {
-            case 'menu':
-                include('menu/index.php');
-                break;
+    //     switch($page) {
+    //         case 'menu':
+    //             include('menu/index.php');
+    //             break;
 
-            default:
-            include('accueil/accueil.php');
-        } 
-        else {
-            include('accueil/acueil.php');
-        }
-    }
+    //         default:
+    //         include('index.php');
+    //     } 
+    // }
+?>
 
-    ?>
-
+<body class="container">
+    <header>
+        <div class="img">
+            <img src="./Images/LOGO_BURGER_mofif.png">
+        </div>
+        <div class="titre">
+            <h1><span> BURGER Company</span></h1>
+            <h3> Pour vous servir</h3>
+        </div>
+        <nav>
+            <a href="./Index.php"> Accueil </a>
+            <a href="./contact.php"> Contact </a>
+            <a href="./faq.php"> F.A.Q </a>
+        </nav>
+    </header>
+    <main></main>
+    <aside>
+        <div class="icones">
+            <i class="fa-solid fa-burger-fries"></i>
+            <i class="fa-solid fa-burger"></i>
+            <i class="fa-solid fa-cup-straw"></i>
+            <i class="fa-solid fa-salad"></i>
+            <i class="fa-solid fa-cupcake"></i>
+        </div>
+        <nav class="nav">
+            <a href="#">MENUS</a> <br>
+            <a href="#">BURGERS</a><br>
+            <a href="#"> BOISSONS</a><br>
+            <a href="#">SALADES</a><br>
+            <a href="#">DESSERTS</a> 
+        </nav>
+    </aside>
+    <footer>
+        <h3> &copy 2022</h3>
+        <a href="#"> Mentions Légales </a>
+    </footer>
+    
 </body>
+
 
 </html>
