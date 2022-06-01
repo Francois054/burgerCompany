@@ -1,90 +1,139 @@
 *{
+    margin: 0;/*réinitialisation*/
+    padding: 0;
     box-sizing: border-box;
-    margin:0;
-    padding:0;
 }
 
-.container{
-display: grid ;
-grid-template-columns: 1fr 3fr;
-grid-template-rows: 120px 250px 250px 80px;
-gap: 5px;
-margin: 10px;
-grid-template-areas: "head head head head"
- "aside main main main"
- "aside main main main"
-"foot foot foot foot";
+body{
+    background-color: indigo;
+    color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
-header{
+main{
     display: flex;
-    grid-area: head;
-    background-color: aqua;
-    justify-content: space-between;
+    justify-content: flex-start;/*répartition gauche/droite de aside et section*/
+    width: 100vw;
+    height: 100vh;
 }
-nav{
-    align-self: center;
-    justify-content:right;
+
+aside{
+    background-color: maroon;
+    width: 15vw;
+    height: 100vh;
+    flex-direction: column;/*mise en direction verticale*/
 }
-a{
-    text-decoration: none;
-    text-align: right;
-    font-size: 1.5rem;
-    color: black;
-    padding: 0 10px;
+
+.top{
+    width:15vw;
+    height: 10vh;
+    margin: 0 5% 10% 0;
+    display: flex;
+    flex-direction: column;/*mise en direction verticale de l'image et du texte*/
+    justify-content: space-between;/*espace égal entre les éléments*/
+    align-items: center;/*centrer les éléments dans la zone aside*/
 }
-.titre{
-    color:black;
-    text-align: center;
+
+.logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;/*arrondit les bords de l'image pour former un cercle*/
+}
+
+.logo:hover{
+    transform: scale(1.22);/*léger zoom sur l'image au survol par le pointeur*/
+}
+
+.social{
+    height: 8%;
+    margin: 10%;
+    display: flex;
+    justify-content: center;/*centrer les icones dans la zonz aside*/
+}
+
+.icon{
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;/*arrondit les bords de l'image pour former un cercle*/
+    display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.icon:hover {
+    transform: scale(1.2);/*léger zoom sur les icones au survol par le pointeur*/
+    color: cyan;/*Changement de couleur des icones au survol par le pointeur*/
+}
+
+nav{
+    height: 25vh;
+    margin-left: 3%;
+    display: flex;
+    justify-content: left;
+    color:antiquewhite
+}
+
+#navicon{
+    margin: 11px;
+    padding-top: 8%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.left image{
+    width: 5px;
+    height: 5px;
+}
+
+.link{
+    text-decoration: none;/*supression du souslignage*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.link:hover {
+    transform: scale(1.2);/*léger zoom sur les liens au survol par le pointeur*/
+    color: cyan;/*Changement de couleur des liens au survol par le pointeur*/
+}
+
+.foot{
+    height: 8vh;
+    margin-top: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 span{
-    text-decoration: underline;
+    color: rgb(65, 120, 156);/*span pour colorer un bout de texte*/
 }
-img{
-    width: 200px;
-    height: 100px;
-    border-radius: 50%;
-    margin-left: 5%;
-    margin: 2%;
-}
-main{
-    grid-area: main;
-    background-color: bisque;
-}
-aside{
+section{
+    width: 85vw;
+    height: 100vh;
+    background-image: url(./Images/backgroung_menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    justify-content:space-evenly;
-    grid-area: aside;
-    background-color: chartreuse;    
+
 }
 
-aside a{
-    font-size: 2.2rem;
-    padding:2%;
+h1{
+    font-size: 40px;
 }
-.icones{
-    height:300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.icones img{
-    width: 50px;
-    height: 50px;
-}
-.nav{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-footer{
-    display: flex;
-    grid-area: foot;
-    background-color: blueviolet;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+
+hr{
+    color: cyan;
+    width: 200px;
+    margin-top: .25%;
+    margin-left: 3.6%;
 }
