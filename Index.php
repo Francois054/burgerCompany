@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/fb7bc50dd3.js" crossorigin="anonymous"></script>
 
     <title>BURGER Company</title>
@@ -15,8 +14,7 @@
         <aside>
             <div class="top">
                 <img class="logo" src="./Images/LOGO_BURGER_mofif.png" >
-            </div>
-            
+            </div>            
             <div class="social">
                 <div class="icon">
                     <i class="fa-brands fa-twitter"></i><!--lien vers icone fontawsome-->
@@ -33,9 +31,8 @@
                 <div class="icon">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
-            </div>
-            
-            <nav class="nav">
+            </div>            
+            <div class="nav">
                 <!-- <div class="left">
                     <img src="./Images/cheeseburger-g0006d9a87_1280.png">
                     <img src="./Images/icones/burger-au-fromage.png">
@@ -44,37 +41,58 @@
                     <img src="./Images/icones/dessert.png">
                 </div> -->
                 <div class="right">
-                    <a class="link" href="#">MENU</a>
-                    <a class="link" href="#">BURGER</a>
-                    <a class="link" href="#">BOISSON</a>
-                    <a class="link" href="#">SALADE</a>
-                    <a class="link" href="#">DESSERT</a>
+                    <button type="button"onclick="redirect_menu()">MENU</button>
+                    <button type="button"onclick="redirect_burger()">BURGER</button>
+                    <button type="button"onclick="redirect_boisson()">BOISSON</button>
+                    <button type="button"onclick="redirect_salade()">SALADE</button>
+                    <button type="button"onclick="redirect_dessert()">DESSERT</button>
                 </div>
 
-            </nav>
+            </div>
             
             <div class="foot">
                 <h5>© Copyright 2022</h5>
                 <h6>Designed by <span>Vf</span></h6><!--span pour colorer un bout de texte-->
             </div>
-
         </aside>
 
         <section>
-            <h1>BURGER Company</h1>
-            <h3 class="ligne">Le meilleur dans votre assiette</h3>
-            <!-- <img class="resto" src="./Images/backgroung_menu.jpg" alt=""> -->
-            <hr>
-
-        </section>
-
-        
+        <div class="onglet">
+            <a href="./Index.php"> Accueil </a>
+            <a href="./contact.php"> Contact </a>
+            <a href="./F.A.Q.php>"> F.A.Q </a>
+        </div>
+            <div class="texte">
+                <h1>BURGER Company</h1>
+                <hr>
+                <h3 class="ligne">Le meilleur dans votre assiette</h3>                
+            </div>
+        </section>        
     </main>
-    
-</body>
-
-    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   
+<script type="text/javascript">
+    function redirect_menu(){
+        window.location.href="menu.php"
+}
+</script>
+<script type="text/javascript">
+    function redirect_burger(){
+        window.location.href="burger.php"
+}
+</script>
+<script type="text/javascript">
+    function redirect_boisson(){
+        window.location.href="boisson.php"
+}
+</script>
+<script type="text/javascript">
+    function redirect_salade(){
+        window.location.href="salade.php"
+}
+</script>
+<script type="text/javascript">
+    function redirect_dessert(){
+        window.location.href="dessert.php"
+}
+</script>
 </body>
 </html>

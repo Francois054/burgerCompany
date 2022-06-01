@@ -7,22 +7,17 @@
 body{
     background-color: indigo;
     color: white;
-    width: 100vw;
-    height: 100vh;
 }
 
 main{
     display: flex;
     justify-content: flex-start;/*répartition gauche/droite de aside et section*/
     width: 100vw;
-    height: 100vh;
 }
 
-aside{
+aside{    
     background-color: maroon;
     width: 15vw;
-    height: 100vh;
-    flex-direction: column;/*mise en direction verticale*/
 }
 
 .top{
@@ -48,6 +43,7 @@ aside{
 .social{
     height: 8%;
     margin: 10%;
+    color: blue;
     display: flex;
     justify-content: center;/*centrer les icones dans la zonz aside*/
 }
@@ -69,11 +65,10 @@ aside{
 }
 
 nav{
-    height: 25vh;
+    height: 22vh;
     margin-left: 3%;
     display: flex;
     justify-content: left;
-    color:antiquewhite
 }
 
 #navicon{
@@ -82,21 +77,30 @@ nav{
 }
 
 .left{
+    width:3vw;
     display: flex;
     flex-direction: column;
 }
-.left image{
-    width: 5px;
-    height: 5px;
-}
 
 .link{
-    text-decoration: none;/*supression du souslignage*/
+    text-decoration: none;/*suppression du souslignage*/
     color: white;
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
+/* .link::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+.link:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+} */
 
 .link:hover {
     transform: scale(1.2);/*léger zoom sur les liens au survol par le pointeur*/
@@ -115,25 +119,36 @@ span{
 }
 section{
     width: 85vw;
-    height: 100vh;
-    background-image: url(./Images/backgroung_menu.jpg);
+    background-image: url(../Images/backgroung_menu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
+    justify-content: right;
 }
-
+.texte{
+    align-self: center;
+    margin:2%;
+    text-align: center;
+}
 h1{
     font-size: 40px;
 }
 
 hr{
     color: cyan;
-    width: 200px;
+    width: 300px;
     margin-top: .25%;
     margin-left: 3.6%;
+}
+.onglet{
+    align-self: top;
+    justify-self:right;
+}
+a{
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.5rem;
+    color: bisque;
+    padding: 0 10px;
 }
