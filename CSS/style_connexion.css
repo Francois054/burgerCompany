@@ -1,0 +1,31 @@
+
+#CONN{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;   
+
+}
+
+#CONN>input{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: bisque;
+}
+
+#subButton{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: bisque;
+}
+#redir{
+    font-size: 20px;
+    height: 5vh;
+    color: blue;
+
+}

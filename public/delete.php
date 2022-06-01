@@ -21,5 +21,4 @@ $query->bindValue(':id', $id, PDO::PARAM_INT);
 $query->execute();
 
 header('location: index.php');
-
 ?>

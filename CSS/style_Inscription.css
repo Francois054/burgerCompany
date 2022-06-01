@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(./Images/background_burger__.jpg);
+}
+
+#form_Inscr{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+#form_Inscr > input{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: bisque;
+}
+
+#subButtonI{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: bisque;
+}

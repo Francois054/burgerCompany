@@ -79,7 +79,7 @@ if (isset($_POST['nom'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style_inscription.css">
+    <link rel="stylesheet" href="../CSS/style_inscription.css">
     <title>INSCRIPTION</title>
 </head>
 
