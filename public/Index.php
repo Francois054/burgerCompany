@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="../public/assets/CSS/style_Inscription.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_contact.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_home.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_FAQ.css">
     <title>BURGER Company</title>
 </head>
 

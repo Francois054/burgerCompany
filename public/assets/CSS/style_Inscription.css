@@ -4,22 +4,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5%;
     
 }
 
 #form_Inscr > input{
-    width: 30vw;
+    width:90%;
     height: 5vh;
     border-radius: 5px;
     margin: 1%;
-    background-color: bisque;
 }
 
 #subButtonI{
-    width: 20vw;
+    width: 90%;
     height: 5vh;
     border-radius: 5px;
     margin: 1%;
-    background-color: bisque;
 }

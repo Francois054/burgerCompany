@@ -87,7 +87,8 @@ if (isset($_POST['nom'])) {
 
 <body>
     <div>            
-        <form id="form_Inscr" method="POST" action= "">       
+        <form id="form_Inscr" method="POST" action= "">
+            <h2> INSCRIPTION </h2>      
             <input type="texte" name="nom" placeholder="nom" required/>      
             <input type="texte" name="prenom" placeholder="prenom" required/>
             <input type="texte" name="adresse" placeholder="adresse" required/>

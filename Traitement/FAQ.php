@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questions fréquentes</title>
-    <link rel="stylesheet" href="../CSS/style_contact.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_FAQ.css">
 </head>
 <body>
     <section class="faq-section">
