@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 main{
     background-image: url(../Images/background_burger__.jpg);
+=======
+
+main {
+    background-image: url(/Images/background_burger__.jpg);
+>>>>>>> 0379bcb86be82efff0032efa4e21a791b6061d6d
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
