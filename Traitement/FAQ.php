@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../CSS/style_contact.css">
 </head>
 <body>
-    <header>
-        <a href="./Index.php"> RETOUR A L'ACCUEIL </a>
-        <a href="./contact.php"> Contact </a>
-    </header>
     <section class="faq-section">
         <input type="checkbox" id="q1">
         <label for="q1">Question 1?</label>

@@ -10,7 +10,7 @@ height: 100vh;
 color: white;
 display: grid ;
 grid-template-columns: 1.2fr 3fr 3fr;
-grid-template-rows: 1fr 8fr;
+grid-template-rows: 1fr 4fr 4fr;
 grid-template-areas: "aside head head"
 "aside main main"
 "aside main main";
@@ -49,17 +49,16 @@ span{
 
 main{
     grid-area: main;
-    color: white;
-    text-align: center;
+    
 }
 
 
 aside{
+    grid-area: aside;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
     flex-direction: column;
-    grid-area: aside;
     background-color:brown;    
 }
 

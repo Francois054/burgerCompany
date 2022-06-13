@@ -3,7 +3,7 @@
 
         <form method="POST" action= "">
 
-            <h1> Contactez-nous <img width="30px" src="/Images/logoPlane (4).svg" ></h1>
+            <h1> Contactez-nous <img width="30px" src="../Images/logoPlane (4).svg" ></h1>
             <div class="email">
                 <p> Entrez votre Email </p>
                 <input type="email" name="email" placeholder="Entrez votre email">
@@ -28,7 +28,7 @@
             </div>
             <div class="area">
                 <p> Votre message: </p>
-                <textarea name="longtexte" id="" cols="57"rows="10"></textarea>
+                <textarea name="longtexte" id="area" cols="57"rows="10"></textarea>
             </div>
 
             <input type="submit" name="Envoyer"/>

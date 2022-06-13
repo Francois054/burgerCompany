@@ -1,9 +1,4 @@
 
-body{
-    height: 80vh;
-    background-color: bisque;
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -20,16 +15,14 @@ a{
 
 form{
     position: absolute;
-    background-color:coral;
-    width: 40%;    
+    width: 20%;    
     margin: 2% 0;
     right: 30%;
     text-align: left;
-    color:aliceblue;    
+    color:black;    
 }
 
-h1{
-    margin: 3% 0;
+form h1{
     text-align: center;
 }
 
@@ -38,20 +31,20 @@ h1{
 }
 
 input[type=email]{
-    margin: 2% auto;
-    width: 89%;
-    height: 5vh;
+    margin: 1% auto;
+    width: 90%;
+    height: 3vh;
     
 }
 
 input[type=prenom]{
-    height: 5vh;
-    width: 11vw;
+    height: 3vh;
+    width: 8vw;
     
 }
 
 input[type=nom]{
-    height: 5vh;
+    height: 3vh;
     width: 11.1vw;
     
 }
@@ -87,13 +80,16 @@ input[type=submit]{
 
 select{
     width:97%;
-    height: 5vh;
+    height: 3vh;
 }
 
 
 .area{
-    width: 50vw;
     margin: 3% 7%;
+}
+#area{
+    width:20vw;
+    height:10vh;
 }
 
 Sélectionnez

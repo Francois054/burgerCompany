@@ -1,13 +1,11 @@
-
-main {
+main{
     background-image: url(../Images/background_burger__.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    color: pink;
+    background-position: center;    
+    color: white;
     text-align: center;
 }
-
 h1{
     padding-top: 10%;
     padding-left: 50%;
