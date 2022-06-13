@@ -58,7 +58,7 @@
             <img src="./Images/icones/dessert.png">
         </div> -->
         <div>
-            <img class="logo" src="../Images/LOGO_BURGER_mofif.png">
+            <img class="logo" src="../public/assets/Images/LOGO_BURGER_mofif.png">
         </div>
 
         <nav class="nav">

@@ -15,7 +15,7 @@ a{
 
 form{
     position: absolute;
-    width: 20%;    
+    width: 30%;    
     margin: 2% 0;
     right: 30%;
     text-align: left;
@@ -23,6 +23,7 @@ form{
 }
 
 form h1{
+    margin: 2%;
     text-align: center;
 }
 
@@ -39,14 +40,12 @@ input[type=email]{
 
 input[type=prenom]{
     height: 3vh;
-    width: 8vw;
-    
+    width: 10vw;    
 }
 
 input[type=nom]{
     height: 3vh;
-    width: 11.1vw;
-    
+    width: 11.1vw;    
 }
 
 .prenom{

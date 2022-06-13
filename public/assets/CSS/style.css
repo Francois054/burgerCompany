@@ -49,7 +49,20 @@ span{
 
 main{
     grid-area: main;
-    
+    background-image: url(../Images/background_burger__.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    color: white;
+    text-align: center;    
+}
+h1{
+    padding-top: 10%;
+    padding-left: 50%;
+}
+h2{
+    padding-top: 1%;
+    padding-left: 50%;
 }
 
 
