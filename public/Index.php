@@ -29,8 +29,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/style_connexion.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_connexion.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_Inscription.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_contact.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>BURGER Company</title>
 </head>
@@ -39,11 +42,11 @@
     
     <header>
         <nav>
-            <a class="navalt" href="./public/index.php"> Accueil </a>
-            <a class="navalt" href="../public/inscription.php"> Inscription </a>
-            <a class="navalt" href="../public/connexion.php"> Connexion </a>
-            <a class="navalt" href="../public/contact.php"> Contact </a>
-            <a class="navalt" href="../public/F.A.Q.php"> F.A.Q </a>
+            <a class="navalt" href="index.php?page=home"> Accueil </a>
+            <a class="navalt" href="index.php?page=inscription"> Inscription </a>
+            <a class="navalt" href="index.php?page=connexion"> Connexion </a>
+            <a class="navalt" href="index.php?page=contact"> Contact </a>
+            <a class="navalt" href="index.php?page=FAQ"> F.A.Q </a>
         </nav>
     </header>
 
@@ -60,22 +63,49 @@
         </div>
 
         <nav class="nav">
-            <a class="navalt" href="../public/menu.php">MENUS</a> <br>
-            <a class="navalt"href="./public/burger.php">BURGERS</a><br>
-            <a class="navalt"href="./public/boisson.php"> BOISSONS</a><br>
-            <a class="navalt"href="./public/salade.php">SALADES</a><br>
-            <a class="navalt"href="./public/dessert.php">DESSERTS</a> 
+            <a class="navalt" href="./traitement/menu.php">MENUS</a> <br>
+            <a class="navalt"href="./traitement/burger.php">BURGERS</a><br>
+            <a class="navalt"href="./traitement/boisson.php"> BOISSONS</a><br>
+            <a class="navalt"href="./traitement/salade.php">SALADES</a><br>
+            <a class="navalt"href="./traitement/dessert.php">DESSERTS</a> 
         </nav>
         <div class="foot">
             <h3 class="copy"> &copy 2022</h3>
             <a class="mention" href="#"> Mentions Légales </a>
         </div>
     </aside>
-    
     <main>
-        <h1>Burger Company</h1>
-        <h2>Le meilleur dans votre assiette !</h2>
-    </main>
+<?php
+    if(isset($_GET['page'])){
+        $page = $_GET['page'];
+
+        switch($page) {
+            case 'menu':
+                include('../traitement/menu.php');
+                break;
+            case 'contact':
+                include('../traitement/contact.php');
+                break;
+            case 'inscription':
+                include('../traitement/inscription.php');
+                break;
+            case 'connexion':
+                include ('../traitement/connexion.php');
+                break;
+                case 'FAQ':
+                    include ('../traitement/FAQ.php');
+                    break;
+    
+
+            default:
+            include('../traitement/home.php');
+        } 
+    }
+    else{
+        include('../traitement/home.php');
+    }
+?></main>
+   
 
 
     
@@ -83,27 +113,3 @@
    
 </body>
 </html>
-
-<?php
-    if(isset($_GET['page'])){
-        $page = $_GET['page'];
-
-        switch($page) {
-            case 'menu':
-                include('menu/index.php');
-                break;
-                case 'contact':
-                    include('public/contact.php');
-                    break;
-                case 'inscription':
-                    include('public/inscription.php');
-                    break;
-                case 'connexion':
-                    include ('public/connexion.php');
-                    break;
-
-            default:
-            include('index.php');
-        } 
-    }
-?>

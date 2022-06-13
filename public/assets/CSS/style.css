@@ -49,21 +49,10 @@ span{
 
 main{
     grid-area: main;
-    background-image: url(../Images/background_burger__.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: white;
     text-align: center;
 }
-h1{
-    padding-top: 10%;
-    padding-left: 50%;
-}
-h2{
-    padding-top: 1%;
-    padding-left: 50%;
-}
+
 
 aside{
     display: flex;
@@ -140,6 +129,12 @@ aside a{
     color: blue;
 
 }
-.menu_burger{
-    background
+.menu_burger img{
+    width: 300px;
+    height: 300px;
+}
+
+.menu_frites img{
+    width: 300px;
+    height: 300px;
 }

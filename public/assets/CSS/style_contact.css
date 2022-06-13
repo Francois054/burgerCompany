@@ -1,8 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 body{
     height: 80vh;
@@ -21,16 +16,6 @@ a{
     font-size: 20px;
     font-weight: 900;
     border: 10px maroon;
-}
-
-
-main{
-    position: relative;
-    background-color: bisque;
-    width: 80%;
-    height: 70vh;
-    margin: 5% auto;
-
 }
 
 form{
