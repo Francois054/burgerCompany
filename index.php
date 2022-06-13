@@ -39,8 +39,8 @@ if(isset($_POST['menu'])){
     <header>
         <nav>
             <a class="navalt" href="./index.php"> Accueil </a>
-            <a class="navalt" href="./index.php"> Inscription </a>
-            <a class="navalt" href="./index.php"> Connexion </a>
+            <a class="navalt" href="./inscription.php"> Inscription </a>
+            <a class="navalt" href="./connexion.php"> Connexion </a>
             <a class="navalt" href="./contact.php"> Contact </a>
             <a class="navalt" href="./faq.php"> F.A.Q </a>
         </nav>
