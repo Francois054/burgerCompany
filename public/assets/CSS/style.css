@@ -110,7 +110,7 @@ aside a{
     width: 20vw;
     text-align: center;
 }
-/* connexion */
+/* connexion 
 #CONN{
     display:flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ aside a{
     height: 5vh;
     color: blue;
 
-}
+}*/
 .menu_burger img{
     width: 300px;
     height: 300px;
