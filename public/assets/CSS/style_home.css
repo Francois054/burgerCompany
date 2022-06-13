@@ -1,14 +1,6 @@
 
-main {
-    background-image: url(../Images/background_burger__.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
-    color: white;
-    text-align: center;
-}
 .burger{
-    margin:20%;
+    display: flex;
 
 }
 

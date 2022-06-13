@@ -90,6 +90,7 @@ name="nom de l'input" sert à le reconnaitre une fois le bouton submit cliqué, 
  -->
 
 <form id="CONN" action="" method="post">
+    <h2 class="connexion"> CONNEXION </h2>
     <input type="email" name="email" placeholder="Votre Email" required/>
     <br />
     <input type="password" name="mdp" placeholder="Mot de Passe" required/>
