@@ -3,7 +3,7 @@
 
         <form method="POST" action= "">
 
-            <h1> Contactez-nous <img width="30px" src="../Images/logoPlane (4).svg" ></h1>
+            <h1> Contactez-nous <img width="30px" src="../public/assets/Images/logoPlane (4).svg" ></h1>
             <div class="email">
                 <p> Entrez votre Email </p>
                 <input type="email" name="email" placeholder="Entrez votre email">
