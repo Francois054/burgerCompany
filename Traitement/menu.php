@@ -1,6 +1,5 @@
-<main>
     <div class="menu_burger">
-        <img src="../images/cheeseburger-g0006d9a87_1280.png">
+        <img src="../public/assets/Images/cheeseburger-g0006d9a87_1280.png">
        <h2> BURGER AU CHOIX </h2> 
     </div>
     <div class="menu_frites">
@@ -16,4 +15,3 @@
         <img src="../Images/BOISSONS/Chaudes/cappuccino.jpg">
         <h2> Goutez à nos délicieuses boissons</h2>
     </div>
-</main>
