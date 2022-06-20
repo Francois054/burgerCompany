@@ -10,6 +10,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/assets/CSS/style.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_connexion.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_Inscription.css">
@@ -47,12 +48,12 @@ session_start();
             <img class="logo" src="../public/assets/Images/LOGO_BURGER_mofif.png">
         </div>
 
-        <nav class="nav2">
-            <a class="navalt2" href="index.php?page=menu">MENUS</a> <br>
-            <a class="navalt2"href="index.php?page=burger">BURGERS</a><br>
-            <a class="navalt2"href="index.php?page=boisson"> BOISSONS</a><br>
-            <a class="navalt2"href="index.php?page=salade">SALADES</a><br>
-            <a class="navalt2"href="index.php?page=dessert">DESSERTS</a> 
+        <nav class="nav">
+            <a class="navalt" href="index.php?page=menu">MENUS</a> <br>
+            <a class="navalt" href="./traitement/burger.php">BURGERS</a><br>
+            <a class="navalt" href="./traitement/boisson.php"> BOISSONS</a><br>
+            <a class="navalt" href="./traitement/salade.php">SALADES</a><br>
+            <a class="navalt" href="./traitement/dessert.php">DESSERTS</a> 
         </nav>
         <div class="foot">
             <h3 class="copy"> &copy 2022</h3>
@@ -104,6 +105,6 @@ session_start();
     // }
 ?></main>
 
-   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>
