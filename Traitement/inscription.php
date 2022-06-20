@@ -17,30 +17,26 @@
 if (isset($_POST['nom'])) {
 
     if(isset($_POST['ville'])) {
-        $villeStr = 'SELECT villes_france_free.ville_id FROM villes_france_free WHERE ville_nom_reel=:ville OR ville_nom_simple=:ville OR ville_nom=:ville';//sélectionne le champ 'nom_reel' ou 'nom_simple' ou 'nom' de la table 'villes_france_free'
+        $villeStr = 'SELECT ID_ville FROM ville WHERE nom_ville=:ville ';//sélectionne le champ 'nom_reel' ou 'nom_simple' ou 'nom' de la table 'villes_france_free'
         $query = $bdd->prepare($villeStr);
         $query->bindValue(':ville', $_POST['ville'], PDO::PARAM_STR);
         $query->execute();
         $ville_Tab = $query->fetch();//retourne un tableau avec ttes les données de la table     
-    }
-            
-     
-//on verifie que les emails et les password sont identiques
-        if ($ville_Tab != null){
+       if ($ville_Tab != null){
             $nom = strip_tags($_POST['nom']);
             $prenom = strip_tags($_POST['prenom']);
             $adresse = strip_tags($_POST['adresse']);
             $email = strip_tags($_POST['email1']);
-            $mdp = htmlspecialchars($_POST['password1']);
+            $mdp = strip_tags($_POST['password1']);
             $gsm = strip_tags($_POST['gsm']);
             $hash = password_hash($mdp, PASSWORD_BCRYPT)  ;    
-
+//on verifie que les emails et les password sont identiques
             if(($_POST['password1'] != $_POST['password2']) OR ($_POST['email1'] != $_POST['email2'])){
                 $erreur = 'les passwords ou email sont différents.';
                 echo $erreur;
             }
             else{
-                $ConnStr = "SELECT * FROM user WHERE email = :email";// va sélectionner les emails dans la table user-vehicule.
+                $ConnStr = "SELECT * FROM user WHERE mail = :email";// va sélectionner les emails dans la table user-vehicule.
                 $query = $bdd->prepare($ConnStr);
                 $query->bindValue(':email', $_POST['email1'], PDO::PARAM_STR);
                 $query->execute();
@@ -51,7 +47,7 @@ if (isset($_POST['nom'])) {
                         }
                     else {
                         //si les 2 mdp et les 2 emails sont identiques, on se connecte à la bdd
-                        $insertStr = 'INSERT INTO user(ID_user, nom, prenom, adresse, email, password1, gsm, ID_ville_id, ID_role) VALUES (NULL, :nom, :prenom, :adresse, :email, :password1, :gsm, :ville, :role1)';
+                        $insertStr = 'INSERT INTO user(ID_user, nom, prenom, adresse, mail, password1, tel, ID_ville, ID_role) VALUES (NULL, :nom, :prenom, :adresse, :email, :password1, :gsm, :ville, :role1)';
                         $Inscription = $bdd-> prepare ($insertStr);
                         $Inscription->bindValue(':nom', $nom, PDO::PARAM_STR);
                         $Inscription->bindValue(':prenom', $prenom, PDO::PARAM_STR);
@@ -59,19 +55,19 @@ if (isset($_POST['nom'])) {
                         $Inscription->bindValue(':email', $email, PDO::PARAM_STR);
                         $Inscription->bindValue(':password1', $hash, PDO::PARAM_STR);
                         $Inscription->bindValue(':gsm', $gsm, PDO::PARAM_INT);
-                        $Inscription->bindValue(':ville', $ville_Tab['ville_id'], PDO::PARAM_INT);
+                        $Inscription->bindValue(':ville', $ville_Tab['ID_ville'], PDO::PARAM_INT);
                         $Inscription->bindValue(':role1', 1, PDO::PARAM_INT);
                         $Inscription->execute();
+                        echo 'Vous êtes bien inscrit !';
                     }
             }
         }
                         
     }           
+}
 
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="fr">

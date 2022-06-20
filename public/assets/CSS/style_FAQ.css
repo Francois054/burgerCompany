@@ -8,7 +8,6 @@
 .faq-section input,
 .faq-section p{
         display: none;
-        color: white;
 }
 /* Montrer uniquement les débuts de réponses */
 .faq-section label{
@@ -31,6 +30,7 @@
         text-overflow: clip;
         white-space: normal;
         overflow:visible;
+        
 }
 
 
@@ -52,10 +52,12 @@
 /* Éviter de sélectionner le texte en cliquant plusieurs fois */
 .faq-section label::selection{
         background: none;
+        
 }
 
 .faq-section label:hover{
         background: white;
+        
 }
 
 /* Style du label si le checkbox est coché */
@@ -64,6 +66,7 @@
         background: #f5deb4;
         background-image: linear-gradient(to bottom, #fff, #f5deb4);
         box-shadow: 0 0 1px rgba(0,0,0,.4);
+        
 }
 
 /* Flèche du label par défaut */
@@ -75,6 +78,7 @@
         margin-top: -6px;
         border: 6px solid transparent;
         border-left-color: inherit;
+        
 }
 
 /* Flèche du label sélectionné */
@@ -83,4 +87,5 @@
         border-top-color: inherit;
         margin-top: -3px;
         right: 10px;
+        
 }

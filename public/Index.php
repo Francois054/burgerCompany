@@ -1,30 +1,11 @@
 <?php
+include('../models/config/database.php');
+session_start();
 
-// session_start();
-
-// $host = 'localhost';
-// $dbname = 'burger_company';
-// $user = 'root';
-// $mdp = '';
-// $charset = 'utf8';
-//Connexion BDD
-// try{
-//     $bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $mdp);
-// }
-// catch(PDOException $fail) {
-//     echo "Erreur : ".$fail->getMessage();
-//     die();
-// }
-
-// if(isset($_POST['menu'])){
-//     $menu = $_POST['menu'];
-//     var_dump($menu);
-// }
-//fin de connexion à la BDD
 ?>
 
 <!DOCTYPE html>
-<html lang="fr"></html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,19 +16,23 @@
     <link rel="stylesheet" href="../public/assets/CSS/style_contact.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_home.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_FAQ.css">
+    <link rel="stylesheet" href="../public/assets/CSS/style_burger.css">
     <title>BURGER Company</title>
 </head>
 
 <body>
     
     <header>
-        <nav>
-            <a class="navalt" href="index.php?page=home"> Accueil </a>
-            <a class="navalt" href="index.php?page=inscription"> Inscription </a>
-            <a class="navalt" href="index.php?page=connexion"> Connexion </a>
-            <a class="navalt" href="index.php?page=contact"> Contact </a>
-            <a class="navalt" href="index.php?page=FAQ"> F.A.Q </a>
+        <nav class="nav1">
+            <a class="navalt1" href="index.php?page=home"> Accueil </a>
+            <a class="navalt1" href="index.php?page=inscription"> Inscription </a>
+            <a class="navalt1" href="index.php?page=connexion"> Connexion </a>
+            <a class="navalt1" href="index.php?page=contact"> Contact </a>
+            <a class="navalt1" href="index.php?page=FAQ"> F.A.Q </a>
         </nav>
+        
+        <a class="navalt1" href="index.php?page=Ajout_Ingredients"> Ajout ingrédients </a>
+            
     </header>
 
     <aside>
@@ -62,12 +47,12 @@
             <img class="logo" src="../public/assets/Images/LOGO_BURGER_mofif.png">
         </div>
 
-        <nav class="nav">
-            <a class="navalt" href="./traitement/menu.php">MENUS</a> <br>
-            <a class="navalt"href="./traitement/burger.php">BURGERS</a><br>
-            <a class="navalt"href="./traitement/boisson.php"> BOISSONS</a><br>
-            <a class="navalt"href="./traitement/salade.php">SALADES</a><br>
-            <a class="navalt"href="./traitement/dessert.php">DESSERTS</a> 
+        <nav class="nav2">
+            <a class="navalt2" href="index.php?page=menu">MENUS</a> <br>
+            <a class="navalt2"href="index.php?page=burger">BURGERS</a><br>
+            <a class="navalt2"href="index.php?page=boisson"> BOISSONS</a><br>
+            <a class="navalt2"href="index.php?page=salade">SALADES</a><br>
+            <a class="navalt2"href="index.php?page=dessert">DESSERTS</a> 
         </nav>
         <div class="foot">
             <h3 class="copy"> &copy 2022</h3>
@@ -83,6 +68,21 @@
             case 'menu':
                 include('../traitement/menu.php');
                 break;
+            case 'burger':
+                include('../traitement/burger.php');
+                break;
+            case 'boisson':
+                include('../traitement/boisson.php');
+                break;
+            case 'salade':
+                include('../traitement/salade.php');
+                break;
+            case 'dessert':
+                include('../traitement/dessert.php');
+                break;
+            case 'Ajout_Ingredients':
+                include('../traitement/Ajout_Ingredients.php');
+                break;
             case 'contact':
                 include('../traitement/contact.php');
                 break;
@@ -92,16 +92,16 @@
             case 'connexion':
                 include ('../traitement/connexion.php');
                 break;
-                case 'FAQ':
-                    include ('../traitement/FAQ.php');
-                    break;
+            case 'FAQ':
+                include ('../traitement/FAQ.php');
+                break;
             default:
             include('../traitement/home.php');
         } 
     }
-    else{
-        include('../traitement/home.php');
-    }
+    // else{
+    //     include('../traitement/home.php');
+    // }
 ?></main>
 
    

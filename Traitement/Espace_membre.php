@@ -1,30 +1,18 @@
 <?php
 
-// session_start();
+session_start();
 
-// on se connecte à la base de données.
-// $host = 'localhost';
-// $dbname = 'voiture';
-// $user = 'root';
-// $mdp = '';
-// $charset = 'utf8';
 
-// try{
-//     $bdd = new PDO("mysql:host=$host; dbname=$dbname; charset=$charset", $user, $mdp);
-// } catch(PDOException $fail){
-//     echo "Erreur : ".$fail->getMessage();
-//     die();
-// }
 
-if(!isset($_SESSION['user']['email'])) {
-    header('location:index.php');
+if(!isset($_SESSION['user']['mail'])) {
+    header('location:home.php');
     exit();
 
 }
 if(isset($_SESSION['user'])){
     $id = $_SESSION['user']['ID'];
   
-    $InscrStr = "SELECT * FROM user_vehicule INNER JOIN villes_france_free ON ville_id = ID_ville_id WHERE ID_user = :id";
+    $InscrStr = "SELECT * FROM user INNER JOIN ville ON ville_id = ID_ville WHERE ID_user = :id";
   
     $InscrQuery = $bdd->prepare($InscrStr);
     $InscrQuery->bindValue(':id', $id, PDO::PARAM_INT);
@@ -45,7 +33,7 @@ if(isset($_SESSION['user'])){
     <input type="texte" name="nom" placeholder="nom" value="<?php echo $Inscr['nom'] ?>" required/>      
     <input type="texte" name="prenom" placeholder="prenom" value="<?php echo $Inscr['prenom'] ?>" required/>
     <input type="texte" name="adresse" placeholder="adresse" value="<?php echo $Inscr['adresse'] ?>" required/>
-    <input type="entier" name="gsm" placeholder="téléphone"value="<?php echo $Inscr['gsm'] ?>" required/><br>
+    <input type="entier" name="tel" placeholder="téléphone"value="<?php echo $Inscr['gsm'] ?>" required/><br>
     <input type="texte" name="ville" placeholder="ville" value="<?php echo $Inscr['ville_nom'] ?>" required/>
     <input type="email" name="email1" placeholder="email" value="<?php echo $Inscr['email'] ?>" required/>
     <input type="email" name="email2" placeholder="vérifier email" required/>
@@ -59,7 +47,7 @@ if(isset($_SESSION['user'])){
 if(isset($_POST['nom'])){
 
     if(isset($_POST['ville'])) {
-        $villeStr = 'SELECT villes_france_free.ville_id FROM villes_france_free WHERE ville_nom_reel=:ville OR ville_nom_simple=:ville OR ville_nom=:ville';//sélectionne le champ 'nom_reel' de la table 'villes_france_free'
+        $villeStr = 'SELECT ville.ID_ville FROM ville WHERE nom_ville=:ville ';//sélectionne le champ 'nom_reel' de la table 'villes_france_free'
         $query = $bdd->prepare($villeStr);
         $query->bindValue(':ville', $_POST['ville'], PDO::PARAM_STR);
         $query->execute();
@@ -92,7 +80,7 @@ if(isset($_POST['nom'])){
                 
                     else {
                         //si les 2 mdp et les 2 emails sont identiques, on se connecte à la bdd
-                        $insertStr = 'UPDATE user_vehicule SET nom=:nom, prenom=:prenom, adresse=:adresse, email=:email, password1= :password1, gsm=:gsm, ID_ville_id=:ville WHERE ID_user=:id';
+                        $insertStr = 'UPDATE user SET nom=:nom, prenom=:prenom, adresse=:adresse, mail=:email, password1= :password1, tel=:gsm, ID_ville=:ville WHERE ID_user=:id';
                         $REinscription = $bdd-> prepare ($insertStr);
                         $REinscription->bindValue(':nom', $nom, PDO::PARAM_STR);
                         $REinscription->bindValue(':prenom', $prenom, PDO::PARAM_STR);

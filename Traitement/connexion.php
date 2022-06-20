@@ -1,21 +1,8 @@
 <?php
 
-// on se connecte à la base de données.
-// $host = 'localhost';
-// $dbname = 'burger_company';
-// $user = 'root';
-// $mdp = '';
-// $charset = 'utf8';
 
-// try{
-//     $bdd = new PDO("mysql:host=$host; dbname=$dbname; charset=$charset", $user, $mdp);
-// } catch(PDOException $fail){
-//     echo "Erreur : ".$fail->getMessage();
-//     die();
-// }
-/*
-Page: connexion.php
-*/
+// Page: connexion.php
+
 //à mettre tout en haut du fichier .php, cette fonction propre à PHP servira à maintenir la $_SESSION
 
 //si le bouton "Connexion" est cliqué
@@ -40,7 +27,7 @@ if(isset($_POST['connexion'])){
             
             //on fait maintenant la requête dans la base de données pour rechercher si ces données existent et correspondent:
 
-            $ConnStr = "SELECT * FROM user WHERE email = :email";
+            $ConnStr = "SELECT * FROM user WHERE mail = :email";
             $query = $bdd->prepare($ConnStr);
             $query->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
             $query->execute();
@@ -60,12 +47,11 @@ if(isset($_POST['connexion'])){
                     $_SESSION['user']['nom'] = $Conn_Tab['nom'];
                     $_SESSION['user']['prenom'] = $Conn_Tab['prenom'];
                     $_SESSION['user']['adresse'] = $Conn_Tab['adresse'];
-                    $_SESSION['user']['email'] = $Conn_Tab['email'];
+                    $_SESSION['user']['mail'] = $Conn_Tab['mail'];
                     $_SESSION['user']['password1'] = $Conn_Tab['password1'];
-                    $_SESSION['user']['adresse'] = $Conn_Tab['adresse'];
-                    $_SESSION['user']['gsm'] = $Conn_Tab['gsm'];
+                    $_SESSION['user']['tel'] = $Conn_Tab['tel'];
                     $_SESSION['user']['ID'] = $Conn_Tab['ID_user'];
-                    $_SESSION['user']['ville'] = $Conn_Tab['ID_ville_id'];
+                    $_SESSION['user']['ville'] = $Conn_Tab['ID_ville'];
                     $_SESSION['user']['role'] = $Conn_Tab['ID_role'];
                 
                     echo "<P>Vous êtes à présent connecté !</P>";
