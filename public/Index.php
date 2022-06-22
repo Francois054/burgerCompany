@@ -48,12 +48,12 @@ session_start();
             <img class="logo" src="../public/assets/Images/LOGO_BURGER_mofif.png">
         </div>
 
-        <nav class="nav">
-            <a class="navalt" href="index.php?page=menu">MENUS</a> <br>
-            <a class="navalt" href="index.php?page=burger">BURGERS</a><br>
-            <a class="navalt" href="index.php?page=boisson"> BOISSONS</a><br>
-            <a class="navalt" href="index.php?page=salade">SALADES</a><br>
-            <a class="navalt" href="index.php?page=dessert">DESSERTS</a> 
+        <nav class="nav2">
+            <a class="navalt2" href="index.php?page=menu">MENUS</a> <br>
+            <a class="navalt2" href="index.php?page=burger">BURGERS</a><br>
+            <a class="navalt2" href="index.php?page=boisson"> BOISSONS</a><br>
+            <a class="navalt2" href="index.php?page=salade">SALADES</a><br>
+            <a class="navalt2" href="index.php?page=dessert">DESSERTS</a> 
         </nav>
         <div class="foot">
             <h3 class="copy"> &copy 2022</h3>

@@ -1,17 +1,38 @@
-<div class="menu_burger">
-    <img src="../public/assets/images/cheeseburger-g0006d9a87_1280.png">
-    <h2> BURGER AU CHOIX </h2> 
+<div>
+    <h2 class="cat_menu">Nos menus</h2>
 </div>
-<div class="menu_frites">
-    <img src="../public/assets/images/Produits/french-fries-g89a9fb918_1920.jpg">
-    <h2> Nos accompagnements</h2>
-</div>
-<div class="menu_boisson">
-    <div class="soft"></div>
-        <img src="../public/assets/Images/BOISSONS/froides/Sprite.jpg">
-    <div class="alcool">
-        <img src="../public/assets/Images/BOISSONS/alcool/heineken_small.jpg">
+
+<section class="listemenu">
+
+    <div class="chickenmenu">
+        <img class="img_produit" src="../public/assets/Images/menu/chiken_menu.jpg" alt="">
+        <div>
+            <h3 class="titreproduit">Menu Chicken</h3>
+            <p class="p_produit">Pain spécial, spécialité de poulet pané, salade et sauce.</p><br>
+            <p class="p_produit">Avec frites et boisson.</p>
+            <input class="quantite" type="number" min="0" max="10" placeholder="Quantité">
+            <input class="panier_produit" type="submit" value="Ajouter au panier">
+        </div>
     </div>
-    <img src="../public/assets/Images/BOISSONS/Chaudes/cappuccino.jpg">
-    <h2> Goutez à nos délicieuses boissons</h2>
+
+    <div class="Swedishburgermenu">
+        <img class="img_produit" src="../public/assets/Images/menu/Swedish_burger_menu.jpg" alt="">
+        <div>
+            <h3 class="titreproduit">Menu Swedish</h3>
+            <p class="p_produit">Pain suédois, double cheddar, sauce Spécial, trois steaks de boeuf, salade, tomate.</p><br>
+            <p class="p_produit">Avec frites et boisson.</p>
+            <input class="quantite" type="number" min="0" max="10" placeholder="Quantité">
+            <input class="panier_produit" type="submit" value="Ajouter au panier">
+        </div>
+    </div>
+
+    <div class="triplecheesemenu">
+        <img class="img_produit" src="../public/assets/Images/menu/triple_cheese_menu.jpg" alt="">
+        <div>
+            <h3 class="titreproduit">Menu Triple Cheese</h3>
+            <p class="p_produit">Buns, deux steaks, cheddar, rondelles de cornichon, oignons, moutarde et ketchup.</p><br>
+            <p class="p_produit">Avec frites et boisson.</p>
+            <input class="quantite" type="number" min="0" max="10" placeholder="Quantité">
+            <input class="panier_produit" type="submit" value="Ajouter au panier">
+        </div>
     </div>
