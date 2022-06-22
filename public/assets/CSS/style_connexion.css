@@ -1,0 +1,38 @@
+
+#CONN{
+    display:flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    backdrop-filter: blur(5px);
+    padding: 5px 18px;
+    /* border: 1px solid white; */
+    box-shadow: 1px 1px 5px black;
+    border-radius:10px;
+
+}
+
+#CONN>input{
+    width: 90%;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+#subButton{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+}
+#redir{
+    font-size: 20px;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    margin: 2%;
+}
+.connexion{
+    text-align: center;
+}
