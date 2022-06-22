@@ -10,7 +10,7 @@
     <div class="soft"></div>
         <img src="../public/assets/Images/BOISSONS/froides/Sprite.jpg">
     <div class="alcool">
-        <img src="../public/assets/Images/BOISSONS/alcool/heineken.png">
+        <img src="../public/assets/Images/BOISSONS/alcool/heineken_small.jpg">
     </div>
     <img src="../public/assets/Images/BOISSONS/Chaudes/cappuccino.jpg">
     <h2> Goutez à nos délicieuses boissons</h2>

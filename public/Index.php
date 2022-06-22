@@ -30,9 +30,9 @@ session_start();
             <a class="navalt1" href="index.php?page=connexion"> Connexion </a>
             <a class="navalt1" href="index.php?page=contact"> Contact </a>
             <a class="navalt1" href="index.php?page=FAQ"> F.A.Q </a>
-        </nav>
-        
-        <a class="navalt1" href="index.php?page=Ajout_Ingredients"> Ajout ingrédients </a>
+            <a class="navalt1" href="index.php?page=Ajout_Ingredients"> Ajout ingrédients </a>
+            
+        </nav>       
             
     </header>
 
@@ -44,16 +44,16 @@ session_start();
             <img src="./Images/icones/bol-a-salade-dessine-a-la-main.png">
             <img src="./Images/icones/dessert.png">
         </div> -->
-        <div>
+        <div id="logo">
             <img class="logo" src="../public/assets/Images/LOGO_BURGER_mofif.png">
         </div>
 
         <nav class="nav">
             <a class="navalt" href="index.php?page=menu">MENUS</a> <br>
-            <a class="navalt" href="./traitement/burger.php">BURGERS</a><br>
-            <a class="navalt" href="./traitement/boisson.php"> BOISSONS</a><br>
-            <a class="navalt" href="./traitement/salade.php">SALADES</a><br>
-            <a class="navalt" href="./traitement/dessert.php">DESSERTS</a> 
+            <a class="navalt" href="index.php?page=burger">BURGERS</a><br>
+            <a class="navalt" href="index.php?page=boisson"> BOISSONS</a><br>
+            <a class="navalt" href="index.php?page=salade">SALADES</a><br>
+            <a class="navalt" href="index.php?page=dessert">DESSERTS</a> 
         </nav>
         <div class="foot">
             <h3 class="copy"> &copy 2022</h3>
