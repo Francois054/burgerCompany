@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+width: 100vw;
+color: white;
+display: grid ;
+grid-template-columns: 1.2fr 3fr 3fr;
+grid-template-rows: 1fr 4fr 4fr;
+grid-template-areas: "aside head head"
+"aside main main"
+"aside main main";
+}
+
+header{
+    display: flex;
+    grid-area: head;
+    background-color:black;
+    justify-content:space-between;
+}
+.logo{
+    width: 150px;
+    padding-top: 12%;
+}
+.nav1{
+    align-self: center;
+}
+
+.navalt1 {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: 0.3s;
+}
+.navalt1:hover{
+    color: brown;
+    text-decoration: underline;
+}
+.nav2{
+    height: 80%;
+    align-items: center;
+}
+.navalt2{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: 0.3s;
+}
+.navalt2:hover{
+    color: black;
+    text-decoration: underline;
+}
+.titre{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    color: white;
+}
+span{
+    text-decoration: underline;
+}
+
+main{
+    grid-area: main;
+    background-image: url(../Images/background_burger__.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    color: white;
+    text-align: center;    
+}
+
+
+aside{
+    grid-area: aside;
+    display: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    background-color:brown;    
+}
+
+aside a{
+    font-size: 2.2rem;
+    padding:2%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+}
+.mention{
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+}
+.foot{
+    height: 20vh;
+    width: 20vw;
+    text-align: center;
+}
+/* connexion 
+#CONN{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;   
+
+}
+
+#CONN>input{
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: bisque;
+}
+
+#subButton{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: bisque;
+}
+#redir{
+    font-size: 20px;
+    height: 5vh;
+    color: blue;
+
+}*/
+.menu_burger img{
+    width: 300px;
+    height: 300px;
+}
+
+.menu_frites img{
+    width: 300px;
+    height: 300px;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    margin: 5%;
+}
+
+
+.cat_burger{
+    padding: 2% 0 2% 0;
+    text-align: center;
+}
+.listeburger{
+    display: grid;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+    "cheeseburger ."
+    ". baconburger"
+    "chickenburger .";
+}
+.cheeseburger{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: cheeseburger;
+}
+.baconburger{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: baconburger;
+}
+.chickenburger{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: chickenburger;
+}
+.img_burger{
+    width: 35%;
+    padding: 0% 2% 0 2%;
+}
+.titreburger{
+    padding: 0 0 0 0 ;
+}
+.pburger{
+    padding: 4% 0 4% 0 ;
+    width: 70%;
+}
+.quantite{
+    width: 18%;
+}
+.panierburger{
+    padding: 0 0 0 0 ;
+}
+
+.cat_dessert{
+    padding: 2% 0 2% 0;
+    text-align: center;
+}
+.listedessert{
+    display: grid;
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+    "cookie ."
+    ". sundae"
+    "tiramisu .";
+}
+.cookie{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: cookie;
+}
+.sundae{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: sundae;
+}
+.tiramisu{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: tiramisu;
+}
+.img_dessert{
+    width: 35%;
+    padding: 0% 2% 0 2%;
+}
+.titredessert{
+    padding: 0 0 0 0 ;
+}
+.pdessert{
+    padding: 4% 0 4% 0 ;
+    width: 70%;
+}
+.quantite{
+    width: 20%;
+}
+.panierdessert{
+    padding: 0 0 0 0 ;
+    width: 35%;
+}
+
+/* salade */
+
+.cat_salade{
+    padding: 2% 0 2% 0;
+    text-align: center;
+}
+.listesalade{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    "caesar ."
+    ". italienne";
+}
+.caesar{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: caesar;
+}
+.italienne{
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 0;
+    grid-area: italienne;
+}
+
+.img_produit{
+    width: 35%;
+    padding: 0% 2% 0 2%;
+}
+.titreproduit{
+    padding: 0 0 0 0 ;
+}
+.p_produit{
+    padding: 4% 0 4% 0 ;
+    width: 70%;
+}
+.quantite{
+    width: 20%;
+}
+.panier_produit{
+    padding: 0 0 0 0 ;
+    width: 35%;
+}
