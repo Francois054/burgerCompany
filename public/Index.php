@@ -17,7 +17,6 @@ session_start();
     <link rel="stylesheet" href="../public/assets/CSS/style_contact.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_home.css">
     <link rel="stylesheet" href="../public/assets/CSS/style_FAQ.css">
-    <link rel="stylesheet" href="../public/assets/CSS/style_burger.css">
     <title>BURGER Company</title>
 </head>
 

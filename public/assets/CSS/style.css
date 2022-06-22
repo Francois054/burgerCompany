@@ -5,18 +5,20 @@
 }
 
 body{
-width: 100vw;
-height: 150vh;
 color: white;
 display: grid ;
 grid-template-columns: 1.2fr 3fr 3fr;
-grid-template-rows: 1fr 4fr 4fr;
+grid-template-rows: 1fr 5fr 5fr;
 grid-template-areas: "aside head head"
 "aside main main"
 "aside main main";
 }
 
+main{
+    width: 85vw;
+}
 header{
+    height: 15vh;
     display: flex;
     display: fixed;
     grid-area: head;
@@ -29,14 +31,13 @@ header{
 }
 .nav1{
     align-self: center;
-    height: 10vh;
 }
 
 .navalt1 {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 20px;
     transition: 0.3s;
 }
 .navalt1:hover{
@@ -44,6 +45,7 @@ header{
     text-decoration: underline;
 }
 .nav2{
+    padding: 50% 0 0 0 ;
     height: 80%;
     align-items: center;
 }
@@ -80,6 +82,7 @@ main{
 
 
 aside{
+    width: 15vw;
     grid-area: aside;
     display: flex;
     align-items: center;
@@ -109,7 +112,7 @@ aside a{
 .copy{
     color: white;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 20%;
 }
 .mention{
     color: white;
@@ -117,7 +120,7 @@ aside a{
     font-size: 100%;
 }
 .foot{
-    height: 20vh;
+    height: 30vh;
     width: 20vw;
     text-align: center;
     align-self: center;
@@ -183,11 +186,15 @@ aside a{
     opacity: 0.8;
     color: black;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: 
+    "h2 ."
     "cheeseburger ."
     ". baconburger"
     "chickenburger .";
+}
+h2{
+    grid-area: h2;
 }
 .cheeseburger{
     display: flex;
@@ -380,4 +387,29 @@ aside a{
 .panier_produit{
     padding: 0 0 0 0 ;
     width: 35%;
+}
+/* BOISSONS */
+.chaude{
+    display: flex;
+    background-color: white;
+    opacity: 0.8;
+    color: black;    
+}
+.img_Bchaud{
+    width: 20%;
+    height: auto;
+    padding: 0% 2% 0 2%;
+}
+.titreboisson{
+    padding: 0 0 0 0 ;
+    font-size: 20px;
+}
+.quantiteboisson{
+    width: 20%;
+    height: 10%;
+}
+.panier_boisson{
+    padding: 0 0 0 0 ;
+    width: 35%;
+    height: 10%;
 }
